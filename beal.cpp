@@ -1,20 +1,19 @@
 #include <iostream>
+#include <fstream>
 
 using std::cout;
 using std::cin;
 using std::endl;
+using std::string;
+using std::fstream
+
 
 int main()
 {
-	int in, out, root;
-	float result;
+	string inFile, outFile;
+	fstream fileMod;
 
-	while(true)
-	{	
-		cout << "Enter number to take the roots of." << endl; 
-		cin >> in;
-		
-		root = 0;
- 		while(result > 2)
-		{
-			 root = root + 1;
+	infile = "primes.txt";
+	outfile = "beal_results.txt";
+
+}
