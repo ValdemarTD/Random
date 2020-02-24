@@ -8,6 +8,7 @@
  * VK_DOWN = 0x28
  * VK_LEFT = 0x25
  * VK_CONTROL = 0x11
+ * VK_ESCAPE = 0x1B
  */
 #define TOGGLE_KEY = 0x10
 #define SPEED_UP_KEY = 0x26
@@ -15,9 +16,11 @@
 #define SPEED_DOWN_KEY = 0x28
 #define SPEED_HALF_KEY = 0x25
 #define END_PROGRAM_KEY = 0x11
+#define E_STOP_KEY = 0x1B
 
 #define UPPER_CLICKER_BOUND = 500
 #define LOWER_CLICKER_BOUND = 0
+#define BASE_SPEED = 20
 
 #define SECOND_LENGTH_NS = 1000000000
 
