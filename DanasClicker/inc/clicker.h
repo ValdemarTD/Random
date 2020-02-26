@@ -1,6 +1,8 @@
 #pragma once
-#include <winuser.h>
+#pragma comment(lib, "User32.lib")
+#include <Windows.h>
 
+#define DEBUG 0
 
 /* VK_SHIFT = 0x10
  * VK_UP = 0x26
@@ -10,19 +12,20 @@
  * VK_CONTROL = 0x11
  * VK_ESCAPE = 0x1B
  */
-#define TOGGLE_KEY = 0x10
-#define SPEED_UP_KEY = 0x26
-#define SPEED_DOUBLE_KEY = 0x27
-#define SPEED_DOWN_KEY = 0x28
-#define SPEED_HALF_KEY = 0x25
-#define END_PROGRAM_KEY = 0x11
-#define E_STOP_KEY = 0x1B
 
-#define UPPER_CLICKER_BOUND = 500
-#define LOWER_CLICKER_BOUND = 0
-#define BASE_SPEED = 20
+#define TOGGLE_KEY 0x10
+#define SPEED_UP_KEY 0x26
+#define SPEED_DOUBLE_KEY 0x27
+#define SPEED_DOWN_KEY 0x28
+#define SPEED_HALF_KEY 0x25
+#define END_PROGRAM_KEY 0x11
+#define E_STOP_KEY 0x1B
 
-#define SECOND_LENGTH_NS = 1000000000
+#define UPPER_CLICKER_BOUND 500
+#define LOWER_CLICKER_BOUND 0
+#define BASE_SPEED 20
+
+#define SECOND_LENGTH_NS 1000
 
 // enums speed modifiers
 enum{S_INCREASE, S_DECREASE, S_DOUBLE, S_HALVE};
@@ -55,3 +58,6 @@ void custom_sleep(int);
 
 // Runs the clicker inside of main
 void run_clicker(ClickerStruct*);
+
+// Greets the user and gives instructions
+void greeting_message();
